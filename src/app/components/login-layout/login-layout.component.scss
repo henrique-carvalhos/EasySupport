@@ -1,0 +1,27 @@
+@import "../../../styles/variables.scss";
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+    section{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-section{
+        flex-grow: 1;
+        background-color: $es-secundary-color;
+    }
+
+    .form-section{
+        flex-grow: 0.3;
+        gap: 40px;
+    }
+}
