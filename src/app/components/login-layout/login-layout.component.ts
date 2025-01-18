@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { EsButtonComponent } from "../../shared/components/es-button/es-button.component";
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -9,5 +9,9 @@ import { ReactiveFormsModule } from '@angular/forms';
   styleUrl: './login-layout.component.scss'
 })
 export class LoginLayoutComponent {
+  @Output('submit') onSubmit = new EventEmitter();
 
+  submit(){
+    this.onSubmit.emit();
+  }
 }
