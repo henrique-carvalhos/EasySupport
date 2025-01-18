@@ -1,1 +1,9 @@
-<p>primary-input works!</p>
+<div class="input-wrapper">
+  <label [for]="inputName">{{label}}</label>
+  <div class="input-content">
+    <div class="icon">
+      <ng-content></ng-content>
+    </div>
+    <input [type]="type" [value]="value" (input)="onInput($event)" [placeholder]="placeHolder" />
+  </div>
+</div>
