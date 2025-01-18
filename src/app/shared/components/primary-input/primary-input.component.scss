@@ -15,18 +15,18 @@
 
 
     .icon {
-      padding: 20px;
+      padding: $es-padding-input-button;
       background-color: $es-secundary-color;
       border-radius: 10px 0 0 10px;
+      color: $es-primary-color;
     }
 
     input {
       width: 400px;
-      padding: 20px;
+      padding: $es-padding-input-button;
       border-radius: 0 10px 10px 0;
       background-color: $es-secundary-color;
       border: none;
     }
   }
-
 }
