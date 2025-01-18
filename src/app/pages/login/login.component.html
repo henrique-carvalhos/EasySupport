@@ -1,5 +1,10 @@
 <app-login-layout>
-    <form [formGroup]="loginForm">
-        
-    </form>
+  <form [formGroup]="loginForm">
+    <app-primary-input formControlName="email" inputName="email" type="email" label="E-mail" placeHolder="example@mail.com">
+      <img src="e-mail.svg" />
+    </app-primary-input>
+    <app-primary-input formControlName="password" inputName="senha" formName="senha" type="senha" label="Senha">
+        <img src="password.svg" />
+      </app-primary-input>
+  </form>
 </app-login-layout>
