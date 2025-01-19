@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-es-button',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './es-button.component.scss'
 })
 export class EsButtonComponent {
-
+  @Input() text: string = '';
 }
