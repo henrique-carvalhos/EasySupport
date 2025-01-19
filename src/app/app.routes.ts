@@ -8,7 +8,7 @@ export const routes: Routes = [
         component: LoginComponent
     },
     {
-        path: 'tickets-users',
+        path: 'tickets-user',
         component: ListTicketsUserComponent
     }
 ];
