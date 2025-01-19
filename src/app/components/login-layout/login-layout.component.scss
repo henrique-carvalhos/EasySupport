@@ -1,27 +1,35 @@
 @import "../../../styles/variables.scss";
 
-main{
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  section {
+    height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    
-    section{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  }
 
-    .main-section{
-        flex-grow: 1;
-        background-color: $es-secundary-color;
-    }
+  // .main-section{
+  //     flex-grow: 1;
+  //     background-color: $es-secundary-color;
+  // }
 
-    .form-section{
-        flex-grow: 0.3;
-        gap: 40px;
-    }
+  .form-section {
+    //flex-grow: 0.3;
+    -webkit-box-shadow: 1px 1px 8.5px 2px #dddddd;
+    -moz-box-shadow: 1px 1px 8.5px 2px #dddddd;
+    box-shadow: 1px 1px 8.5px 2px #dddddd;
+    background-color: #f9f9f9;
+    border: 1px solid #D2D2D2;
+    border-radius: 10px;
+    height: 550px;
+    padding: 50px;
+    gap: 40px;
+  }
 }
