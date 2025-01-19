@@ -1,7 +1,7 @@
 @import "../../../../styles/variables.scss";
 
 button{
-    width: 400px;
+    width: 300px;
     padding: $es-padding-input-button;
     border-radius: 10px;
     color: $es-secundary-color;
@@ -9,9 +9,9 @@ button{
     font-size: 13px;
     font-weight: 600;
     border:none;
-    box-shadow: -4px 9px 48px 5px rgba(5,5,5,0.33);
-    -webkit-box-shadow: -4px 9px 48px 5px rgba(5,5,5,0.33);
-    -moz-box-shadow: -4px 9px 48px 5px rgba(5,5,5,0.33);
+    // box-shadow: -4px 9px 48px 5px rgba(5,5,5,0.33);
+    // -webkit-box-shadow: -4px 9px 48px 5px rgba(5,5,5,0.33);
+    // -moz-box-shadow: -4px 9px 48px 5px rgba(5,5,5,0.33);
     cursor: pointer;
 
     &:hover{
