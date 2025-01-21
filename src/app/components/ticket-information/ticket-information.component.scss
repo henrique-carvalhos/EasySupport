@@ -76,5 +76,11 @@ main {
         margin-top: 20px;
         width: 100%;
     }
+
+    .button-position{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
