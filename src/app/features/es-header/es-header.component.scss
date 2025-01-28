@@ -1,13 +1,10 @@
 @import '../../../styles/variables.scss';
 
 .es-header{
+    height: $es-header-size;
     width: 100%;
-    padding: 10px;
-    border-bottom: 1px solid $es-line-color;
-    -webkit-box-shadow: 3px 3px 10px 3px #dfdfdf;
-    -moz-box-shadow: 3px 3px 10px 3px #dfdfdf;
-    box-shadow: 3px 3px 10px 3px #dfdfdf;
-    background-color: white;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
     position: fixed;
     z-index: 1;
     left: 0;
@@ -16,25 +13,55 @@
     display: flex;
     flex-direction: row;
 
-    .image{
-        width: 200px;
+    .logo {
+        display: flex;
+        align-items: center;
+        max-width: 300px;
+        height: $es-header-size;
+        font-size: 60px;
+        font-weight: 700;
+        padding: 10px 20px 10px 20px;
+        font-family: $es-font-logo;
+        color: #1b425c;
     }
 
-    .user{
+    .mini-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        a {
+            height: $es-header-size;
+            padding: 10px 50px 10px 50px;
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #f7f6f6;
+                border-bottom: 1px solid #1b425c;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .user {
         display: flex;
         flex-direction: column;
         margin-left: auto;
         text-align: right;
         justify-content: center;
         padding-right: 20px;
-
-        .user-name{
-            font-size: 14px;
+        gap: 5px;
+    
+        .user-name {
             font-weight: 700;
         }
-
-        .department{
-            font-size: 12px;
+    
+        .department {
+            font-size: 14px;
             font-weight: 400;
         }
     }
