@@ -18,7 +18,12 @@
                 <option>Lorem ipsum dolor</option>
             </select>
             <label>Assunto</label>
-            <textarea placeholder="Descreva a sua solicitação"></textarea>
+            <quill-editor 
+            [formControl]="conteudo" 
+            [placeholder]="'Digite seu texto aqui...'"
+            [modules]="customModules"
+            ></quill-editor>
+            <!-- <textarea placeholder="Descreva a sua solicitação"></textarea> -->
             <div class="button-position">
                 <app-es-button text="criar"></app-es-button>
             </div>
