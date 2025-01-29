@@ -1,5 +1,7 @@
+@import '../../../styles/variables.scss';
+
 .es-wrapper {
-  max-width: 75%;
+  max-width: $es-wrapper;
   margin: 0 auto;
 
   .main-content {
