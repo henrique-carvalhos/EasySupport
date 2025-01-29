@@ -19,6 +19,9 @@ export class EsButtonComponent {
     if(url.includes('/tickets-user')){
       this.tamanho = '-small';
       this.cor = '';
+    } else if(url.includes('/')){
+      this.tamanho = '';
+      this.cor = '';
     }
   }
 }
