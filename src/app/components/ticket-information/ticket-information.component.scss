@@ -1,86 +1,152 @@
 @import '../../../styles/variables.scss';
 
-main {
-  font-size: 15px;
-  font-weight: 500;
+// main {
+//   font-size: 15px;
+//   font-weight: 500;
 
-  .title {
+//   .title {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: start;
+//     font-size: 16px;
+//     font-weight: 700;
+//   }
+
+//   .box-information {
+//     padding: calc($es-padding-input-button + 5px);
+//     -webkit-box-shadow: 1px 1px 8.5px 2px #dddddd;
+//     -moz-box-shadow: 1px 1px 8.5px 2px #dddddd;
+//     box-shadow: 1px 1px 8.5px 2px #dddddd;
+//     background-color: #f9f9f9;
+//     border: 1px solid #D2D2D2;
+//     border-radius: 10px;
+//     display: flex;
+//     flex-direction: row;
+//     height: 100%;
+//     margin-bottom: 30px;
+
+//     .topic {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: start;
+//       justify-content: start;
+//       flex-grow: 1;
+//     }
+
+//     .data {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: start;
+//       justify-content: end;
+//       flex-grow: 0.04;
+//     }
+//   }
+
+//   .box-interaction {
+//     padding: calc($es-padding-input-button + 5px);
+//     -webkit-box-shadow: 1px 1px 8.5px 2px #dddddd;
+//     -moz-box-shadow: 1px 1px 8.5px 2px #dddddd;
+//     box-shadow: 1px 1px 8.5px 2px #dddddd;
+//     background-color: #f9f9f9;
+//     border: 1px solid #D2D2D2;
+//     border-radius: 10px;
+//     display: flex;
+//     flex-direction: column;
+//     height: 100%;
+
+//     .info-interaction {
+//       display: flex;
+//       flex-direction: row;
+//       align-items: start;
+//       justify-content: start;
+//       padding-top: 10px;
+
+//       p {
+//         margin-right: 15px;
+//       }
+//     }
+
+//     .interaction{
+//         border-bottom: 1px solid $es-line-color;
+//         padding-bottom: 10px;
+//     }
+
+//     textarea{
+//         margin-top: 20px;
+//         width: 100%;
+//     }
+
+//     .button-position{
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//     }
+//   }
+// }
+
+
+.main-content-interactions {
+  padding: 2%;
+  background-color: #f7f6f6;
+  border-radius: 10px;
+  margin: 140px;
+
+  .ticket {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: start;
-    font-size: 16px;
-    font-weight: 700;
+    font-weight:600;
   }
 
-  .box-information {
-    padding: calc($es-padding-input-button + 5px);
-    -webkit-box-shadow: 1px 1px 8.5px 2px #dddddd;
-    -moz-box-shadow: 1px 1px 8.5px 2px #dddddd;
-    box-shadow: 1px 1px 8.5px 2px #dddddd;
-    background-color: #f9f9f9;
-    border: 1px solid #D2D2D2;
+  .admin {
     border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    margin-bottom: 30px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    background-color: #e8e8e8;
 
-    .topic {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: start;
-      flex-grow: 1;
+    .head-interaction {
+      font-weight: 600;
+      margin-bottom: 10px;
     }
 
-    .data {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      justify-content: end;
-      flex-grow: 0.04;
+    .body-interaction {
+      font-weight: 300;
     }
   }
 
-  .box-interaction {
-    padding: calc($es-padding-input-button + 5px);
-    -webkit-box-shadow: 1px 1px 8.5px 2px #dddddd;
-    -moz-box-shadow: 1px 1px 8.5px 2px #dddddd;
-    box-shadow: 1px 1px 8.5px 2px #dddddd;
-    background-color: #f9f9f9;
-    border: 1px solid #D2D2D2;
+  .solic {
+    background-color: #1b425c5a;
     border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    align-items: flex-end;
 
-    .info-interaction {
-      display: flex;
-      flex-direction: row;
-      align-items: start;
-      justify-content: start;
-      padding-top: 10px;
-
-      p {
-        margin-right: 15px;
-      }
+    .head-interaction {
+      font-weight: 600;
+      margin-bottom: 10px;
     }
 
-    .interaction{
-        border-bottom: 1px solid $es-line-color;
-        padding-bottom: 10px;
+    .body-interaction {
+      font-weight: 300;
     }
+  }
 
-    textarea{
-        margin-top: 20px;
-        width: 100%;
-    }
+  .interaction {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
 
-    .button-position{
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    quill-editor {
+      flex-grow: 1;
+      background-color: #fafafa;
     }
   }
 }
