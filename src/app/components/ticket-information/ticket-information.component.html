@@ -1,40 +1,27 @@
-<main>
-    <p class="title">Ticket #2050</p>
-    <div class="box-information">
-        <div class="topic">
-            <p>Assunto</p>
-            <p>Olá, gostaria que trocassem meu mouse, pois ele não está funcionando.</p>
+<main class="main-content-interactions">
+    <div class="ticket">
+        <p>1.SUPORTE - EQUIPAMENTOS</p>
+        <p>#2050 - Mouse ruim</p>
+        <p>Aguardando atendimento</p>
+        <p>24/01/2025 14:02</p>
+        <app-es-button text="ENCERRAR CHAMADO" estilo="-green" tamanho="-medium">ENCERRAR CHAMADO</app-es-button>
+    </div>
+    <div class="interactions">
+        <div class="admin">
+            <p class="head-interaction">Mauricio Souza - Atendente</p>
+            <h3 class="body-interaction">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
         </div>
-        <div class="data">
-            <p>Solicitante Jorge Silva - Comercial</p>
-            <p>Atendente Mauricio Souza</p>
-            <p>Criação 16/01/2025</p>
-            <p>Prioridade Baixa</p>
+        <div class="solic">
+            <p class="head-interaction">Jorge Silva - Comercial</p>
+            <h3 class="body-interaction">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
         </div>
     </div>
-    <p class="title">Interações</p>
-    <div class="box-interaction">
-        <div class="info-interaction">
-            <p>Mauricio Souza - TI</p>
-            <p>Status Em andamento</p>
-            <p>16/01/2025 16:50</p>
-        </div>
-        <div class="interaction">
-            <p>Boa tarde! iremos realizar a troca do mouse assim que possivel.</p>
-        </div>
-        <div class="info-interaction">
-            <p>Mauricio Souza - TI</p>
-            <p>Status Em andamento</p>
-            <p>16/01/2025 16:50</p>
-        </div>
-        <div class="interaction">
-            <p>Boa tarde! iremos realizar a troca do mouse assim que possivel.</p>
-        </div>
-        <div class="">
-            <textarea></textarea>
-        </div>
-        <div class="button-position">
-            <app-es-button text="Interação"></app-es-button>
-        </div>
+    <div class="interaction">
+        <quill-editor 
+        [formControl]="conteudo" 
+        [placeholder]="'Digite seu texto aqui...'"
+        [modules]="customModules"
+        ></quill-editor>
+        <app-es-button text="ENVIAR" estilo="" tamanho="-small">ENCERRAR CHAMADO</app-es-button>
     </div>
 </main>
