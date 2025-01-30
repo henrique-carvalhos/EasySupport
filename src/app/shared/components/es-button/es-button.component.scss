@@ -16,8 +16,22 @@
     background-color: $es-secundary-color;
   }
 
-  &.-small {
+  &.-medium {
     width: 200px;
     padding: 15px;
+  }
+
+  &.-small {
+    width: 100px;
+    padding: 10px;
+  }
+
+  &.-green {
+    background-color: #00a43c;
+
+    &:hover {
+      color: $es-button-primary-color;
+      background-color: $es-secundary-color;
+    }
   }
 }
