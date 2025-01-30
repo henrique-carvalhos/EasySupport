@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-es-button',
@@ -10,18 +9,6 @@ import { Router } from '@angular/router';
 })
 export class EsButtonComponent {
   @Input() text: string = '';
-  tamanho!: string;
-  cor!: string;
-
-  constructor(private router: Router){
-    const url = this.router.url;
-
-    if(url.includes('/tickets-user')){
-      this.tamanho = '-small';
-      this.cor = '';
-    } else if(url.includes('/')){
-      this.tamanho = '';
-      this.cor = '';
-    }
-  }
+  @Input() estilo: string = '';
+  @Input() tamanho: string = '';
 }
