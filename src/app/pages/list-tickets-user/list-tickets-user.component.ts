@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { EsWrapperComponent } from "../../features/es-wrapper/es-wrapper.component";
 import { EsButtonComponent } from '../../shared/components/es-button/es-button.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-tickets-user',
@@ -10,4 +11,9 @@ import { EsButtonComponent } from '../../shared/components/es-button/es-button.c
 })
 export class ListTicketsUserComponent {
 
+  constructor(private router: Router){}
+
+  redirectTo(url: string){
+    this.router.navigateByUrl(url);
+  }
 }
