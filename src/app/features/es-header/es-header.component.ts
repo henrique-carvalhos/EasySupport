@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { LoginComponent } from "../../pages/login/login.component";
 import { LogoComponent } from "../../shared/components/logo/logo.component";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-es-header',
@@ -11,4 +11,9 @@ import { LogoComponent } from "../../shared/components/logo/logo.component";
 })
 export class EsHeaderComponent {
 
+  constructor(private router: Router) { }
+
+  redirectTo(url: string) {
+    this.router.navigateByUrl(url);
+  }
 }
